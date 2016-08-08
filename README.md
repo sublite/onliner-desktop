@@ -1,4 +1,5 @@
 ####Onliner-desktop is a web interface for a telegram bot. This project written with angular. Authentication through VK auth API. DB and telegram bot (written on ruby) do not included in this repository. This is not production ready code.
+All config data must located in .env file. See .env.example for example.
 
 Screenshots:
 <p>
