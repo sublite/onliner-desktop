@@ -1,0 +1,36 @@
+<div class="bar">
+  <span>Мониторинг онлайна пользователей VK</span>
+  <span class="bar-logout" onClick="document.cookie = 'access_token=; Max-Age=0'; location.href='/';">(Выйти из аккаунта)</span>
+</div>
+
+<div class="container" ng-controller="usersController">
+
+  <div class="users">
+    <div class="users-title">Вы наблюдаете за:</div>
+    <div ng-repeat="user in users" class="users-item">
+      <div class="users-ava"><a href="https://vk.com/id{{user.uid}}" target="_blank"><img src="{{user.ava}}"></a></div>
+      <div class="users-name" ng-click="showHistory(user.uid);">{{user.name}}</div>
+      <div class="users-close btn" ng-click="removeUser(user.uid);">X</div>
+    </div>
+    <br>
+    <input type="text" class="users-input" ng-model="userLink" placeholder="Введите ссылку на профиль вконтакте" require>
+    <input type="button" ng-click="addUser();" value="+">
+  </div>
+
+  <div class="stats">
+    <div class="stats-logs">
+      <div style="display:none;" ng-repeat="user in users" id="{{user.uid}}" class="stats-logs-item">
+        <div ng-repeat="time in user.history" class="stats-logs-timing">
+          {{time[0]}} - {{time[1]}}
+          <span class="stats-logs-gadget">{{time[2] | deviceConverter}}</span>
+        </div>
+        <div class="stats-summary" id="sum_{{user.uid}}"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="shadow">
+    <div class="shadow-text">Загрузка...</div>
+  </div>
+
+</div>

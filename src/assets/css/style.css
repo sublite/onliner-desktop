@@ -1,0 +1,185 @@
+body {
+	background-color: #9FAEBD;
+}
+
+.bar {
+	height: 50px;
+	width: 100%;
+	background-color: #25313e;
+	color: white;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 24px;
+  line-height: 45px;
+  text-align: center;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.bar-logout {
+		font-size: 16px;
+		cursor: pointer;
+		margin-left: 30px;
+}
+.bar-logout:hover {
+	text-decoration: underline;
+}
+
+.container {
+	margin: 0px auto;
+	margin-top: 15px;
+	width: 688px;
+	background-color: white;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.users {
+	width: 335px;
+	float: left;
+	height: 500px;
+}
+.users > div:nth-child(even) {
+	/*background-color: #D6D5D5;*/
+}
+.users > .users-item {
+	position: relative;
+	margin-top: 4px;
+	background-color: white;
+	color: #25313e;
+	border: 1px solid #D0CACA;
+}
+.users > .users-item:hover {
+	background-color:#A0B2C3;
+	color: white;
+	border: 1px solid #A0B2C3;
+}
+.users-title {
+	text-align: center;
+	color: #25313e;
+	font-size: 18px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.users-ava img {
+	border-radius: 30px;
+	float: left;
+	cursor: pointer;
+	position: absolute;
+  top: 6px;
+  left: 12px;
+  width: 39px;
+}
+.users-ava .users-name {
+	display: inline-block;
+}
+.users-close {
+	float: right;
+	position: relative;
+    top: -56px;
+}
+.users-name {
+	line-height: 51px;
+  margin-left: 62px;
+  width: 231px;
+  overflow: hidden;
+	cursor: pointer;
+}
+.users-input {
+	width: 245px;
+	margin-left: 24px;
+}
+
+.stats {
+	margin-left: 367px;
+	width: 387px;
+}
+.stats-summary {
+	margin-top: 20px;
+}
+.stats-logs {
+	width:275px;
+	height: 500px;
+	overflow: auto;
+	margin-top: 37px;
+}
+.stats-logs-gadget {
+	margin-left: 10px;
+}
+.stats-logs-timing {
+	display: inline-block;
+	height: 26px;
+	line-height: 26px;
+	width: 100%;
+}
+.stats-logs-item > div:nth-child(even):not(.stats-summary) {
+	background-color: #A0B2C3;
+}
+
+.shadow {
+	display: none;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+}
+.shadow-text {
+	top: 150px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: 148px;
+	margin: auto;
+	font-size: 30px;
+}
+
+html, body {
+    height: 100%;
+}
+
+.login {
+	background-image: url('../imgs/01.jpg');
+	background-size: cover;
+	height:100vh;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+.login-shadow {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.login-containter {
+	position: absolute;
+	margin: auto;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 600px;
+	height: 600px;
+}
+.login-logo {
+  margin-top: 100px;
+}
+.login-title {
+  text-align: center;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 40px;
+  margin-top: 20px;
+}
+.login-button {
+  background-color: white;
+  border: 0;
+  border-radius: 4px;
+  height: 44px;
+  font-size: 16px;
+  width: 159px;
+  margin-top: 20px;
+  cursor: pointer;
+  color: black;
+}

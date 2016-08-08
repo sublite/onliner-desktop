@@ -1,0 +1,10 @@
+{
+    "require": {
+        "phpunit/phpunit": "4.8.*",
+        "vlucas/phpdotenv": "^2.3"
+    },
+    "autoload": {
+        "classmap": ["Sublite/"],
+        "files": ["Sublite/Onliner/CommonLib/CommonLib.php"]
+    }
+}
